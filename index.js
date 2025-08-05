@@ -35,13 +35,24 @@
 // let f = Symbol('5');
 // console.log(typeof(f));// symbol
 
-var x = 10;
-var y = "10";
+// var x = 10;
+// var y = "10";
 
-console.log(x == y);//consider only value //output true
-console.log(x === y);//consider value and data type //output false
-console.log(x === Number(y));//type casting to number //output true
-console.log(String(x) === y);//type casting to string //output true
+// console.log(x == y);//consider only value //output true
+// console.log(x === y);//consider value and data type //output false
+// console.log(x === Number(y));//type casting to number //output true
+// console.log(String(x) === y);//type casting to string //output true
 
-console.log(x != y);//consider only value //output false
-console.log(x !== y);//consider value and data type //output true
+// console.log(x != y);//consider only value //output false
+// console.log(x !== y);//consider value and data type //output true
+
+// console.log(Boolean(1));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(24434n));
+// console.log(Boolean("Abishan"));
+// console.log(Boolean({}));
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+console.log(isNaN("Abishan"));
+console.log(isNaN(10));
