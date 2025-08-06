@@ -1,20 +1,42 @@
 function add(x,y){
-    return x+y;
+    console.log(`x + y = ${x+y}`);
 }
 function sub(x,y){
-    return x-y;
+   console.log(`x - y = ${x-y}`); 
 }
 function mul(x,y){
-    return x*y;
+    console.log(`x * y = ${x*y}`); 
 }
 function div(x,y){
-    return x/y;
+    if(y==0){
+        console.log("Cannot divide by 0");
+    }
+    else{
+        console.log(`x / y = ${x/y}`); 
+    }  
+}
+function mod(x,y){
+    console.log(`x % y = ${x%y}`); 
+}
+function power(x,y){
+    console.log(`x**y = ${x**y}`);
 }
 function calculator(x,y,fun1){
-    console.log(fun1(x,y));
+
+ if (isNaN(x)&& isNaN(y)) {
+    console.log("x and y are not numbers");
+    return;
+  }
+  if (isNaN(x)) {
+    console.log("x is not a number");
+    return;
+  }if (isNaN(y)) {
+    console.log("y is not a number");
+    return;
+  }
+    x = Number(x);
+    y = Number(y);
+    fun1(x,y);
 }
 
-calculator(10,20,add);
-calculator(10,20,sub);
-calculator(10,20,mul);
-calculator(10,20,div);
+calculator(4,"1",mod);
