@@ -15,14 +15,9 @@ function div(x,y){
         console.log(`x / y = ${x/y}`); 
     }  
 }
-function mod(x,y){
-    console.log(`x % y = ${x%y}`); 
-}
-function power(x,y){
-    console.log(`x**y = ${x**y}`);
-}
-function calculator(x,y,fun1){
 
+function calculator(x,y,fun1){
+    
  if (isNaN(x)&& isNaN(y)) {
     console.log("x and y are not numbers");
     return;
@@ -39,4 +34,4 @@ function calculator(x,y,fun1){
     fun1(x,y);
 }
 
-calculator(4,"1",mod);
+calculator(4,"1",div);
