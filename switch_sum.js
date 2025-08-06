@@ -1,14 +1,18 @@
 function sum(x, y, operator) {
+  if (isNaN(x) && isNaN(y)) {
+    console.log("x and y are not numbers");
+    return;
+  }
   if (isNaN(x)) {
     console.log("x is not a number");
     return;
   }if (isNaN(y)) {
     console.log("y is not a number");
     return;
-  }else{
+  }
     x = Number(x);
     y = Number(y);
-  }
+  
 
   switch (operator) {
     case "+":
@@ -29,6 +33,6 @@ function sum(x, y, operator) {
 }
 
 let x = 10;
-let y = "10";
+let y = "6";
 
-sum(x, y, "/"); 
+sum(x, y, "*"); 

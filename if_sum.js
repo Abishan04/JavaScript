@@ -1,4 +1,8 @@
 function sum(x, y, operator) {
+  if (isNaN(x)&& isNaN(y)) {
+    console.log("x and y are not numbers");
+    return;
+  }
   if (isNaN(x)) {
     console.log("x is not a number");
     return;
@@ -18,15 +22,12 @@ function sum(x, y, operator) {
     } else if (operator == "/") {
       console.log(y == 0 ? "Cannot divide by 0" : x / y);
     } else {
-      console.log("Unsupported operator");
-      
+      console.log("Unsupported operator");      
     }
   }
-
-
 }
 
 let x = 10;
-let y = "10";
+let y = 2;
 
 sum(x, y, "/"); 
